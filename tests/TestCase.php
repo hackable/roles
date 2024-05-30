@@ -82,8 +82,8 @@ class TestCase extends Orchestra
 
         // Include custom migrations
         include_once __DIR__ . '/../database/migrations/create_user_table.php';
-        include_once __DIR__ . '/../database/migrations/002.php';
-        include_once __DIR__ . '/../database/migrations/003.php';
+        include_once __DIR__ . '/../database/migrations/create_roles_table.php';
+        include_once __DIR__ . '/../database/migrations/create_role_user_table.php';
         
         (new \CreateUsersTable())->up();
         (new \CreateRolesTable())->up();
